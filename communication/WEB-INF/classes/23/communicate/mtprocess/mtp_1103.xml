@@ -71,12 +71,12 @@
 		<property name="phoneInfoList" ref="phoneInfoList" />
 	</bean>
 	<!-- 敏感词过滤器 -->
-	<bean id="mtpKeywordFilter1103" class="com.lxt2.mtprocess.filter.KeywordFilter">
+	<bean id="mtpKeywordFilter1103" class="com.lxt2.mtprocess.filter.KeywordNewFilter">
 		<property name="dirtyWord" ref="dirtyWord"/>
 		<property name="keywordFilterLevel" ref="mtpKeywordFilterLevel1103"></property>
 	</bean>
 		<!-- 网关通道敏感词过滤器 -->
-	<bean id="mtpGwKeywordFilter1103" class="com.lxt2.mtprocess.filter.GwKeywordFilter">
+	<bean id="mtpGwKeywordFilter1103" class="com.lxt2.mtprocess.filter.GwKeywordNewFilter">
 		<property name="dirtyWord" ref="gwDirtyWord"/>
 		<property name="keywordFilterLevel" ref="mtpGwKeywordFilterLevel1103"></property>
 	</bean>
